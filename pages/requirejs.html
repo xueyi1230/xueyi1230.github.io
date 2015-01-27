@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="keywords" content="RequireJS Demo">
+	<meta name="description" content="一个简易的RequireJS Demo">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/common.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/requirejs.css">
+
+	<title>一个简易的RequireJS Demo</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		 <h1 id="project_title">一个简易的RequireJS Demo</h1>
+		<h2 id="project_tagline">2015/01/27</h2>
+	</header>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner">
+		<p>简易的requirejs示例</p>
+		<p>Demo</p>
+		<p>代码：<a href="https://github.com/xueyi1230/RequireJS" target="_blank">github.com/xueyi1230/RequireJS</a></p>
+		<p>官方文档：<a href="http://www.requirejs.cn/" target="_blank">http://www.requirejs.cn/</a></p>
+		<p>参考资料：
+		<a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target="_blank">Javascript模块化编程（三）：require.js的用法</a>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.ibm.com/developerworks/cn/web/1209_shiwei_requirejs/">使用 RequireJS 优化 Web 应用前端</a>
+		</p>
+		<p>2015/01</p>
+		<div class="demo">
+			<p>这是一个 RequireJS Demo</p>
+	    	<p>文件结构：</p>
+	    	<ul class="file">
+	    		<li>
+	    			script
+	    			<ul>
+	    				<li>
+	                        base
+	                        <ul>
+	                            <li>jquery.js</li>
+	                            <li>require.js</li>
+	                        </ul>
+	                    </li>
+	    				<li>
+	                        widget
+	                        <ul>
+	                            <li>a.js</li>
+	                            <li>b.js</li>
+	                        </ul>
+	                    </li>
+	                    <li>index.js</li>
+	    			</ul>
+	    		</li>
+	    		<li>
+	    			index.html
+	    		</li>
+	    	</ul>
+			<button type="button" id="go_a">点我执行模块B所调用的模块A中的方法</button>
+	        <p></p>
+			<p id="result">执行结果：</p>
+		</div>
+		<p>参考资料<a href="http://www.ibm.com/developerworks/cn/web/1209_shiwei_requirejs/">使用 RequireJS 优化 Web 应用前端</a>中为班级添加学生的实例简单又便于理解，之后我也要写一个实例！</p>
+		<p>以上。</p>
+	</section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+		<p>© xueyi | Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+	</footer>
+</div>
+
+<script data-main="../javascripts/requirejs/index" src="../javascripts/requirejs/base/require.js"></script>
+
+</body>
+</html>
