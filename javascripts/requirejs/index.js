@@ -1,7 +1,7 @@
 require.config({
 	//baseUrl : 'script/',
 	paths : {
-		'jquery' : 'base/jquery',
+		'jquery' : '../base/jquery',
 		'a' : 'widget/a',   //无依懒性模块
 		'b' : 'widget/b'  //普通模块
 	}

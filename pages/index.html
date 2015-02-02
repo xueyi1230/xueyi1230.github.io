@@ -7,7 +7,7 @@
     <meta name="keywords" content="削一 xueyi 1230 削一个博客">
     <meta name="description" content="削一个博客.Github.io : 削一个博客">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/common.css">
 
     <title>削一个博客</title>
   </head>
@@ -30,13 +30,13 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <div id="project">
+        <!--<div id="project">
           成果
           <ul>
-            <li>2015/01/27 <a href="pages/requirejs.html">一个简易的RequireJS Demo</a></li>
-            <li>2015/01/26 <a href="pages/chat.html">WebSocket实时加密聊天室</a></li>
+            <li>2015/01/27 <a href="project/requirejs.html">一个简易的RequireJS Demo</a></li>
+            <li>2015/01/26 <a href="project/chat.html">WebSocket实时加密聊天室</a></li>
           </ul>
-        </div>
+        </div>-->
 
         <div id="collection">
           收藏
@@ -86,6 +86,10 @@
                 /
                 .gitattributes
               </li>
+              <li>
+                <a href="collection/webstorm.html">WebStorm</a>
+                常用快捷键
+              </li>
             </ul>
           </li>
 
@@ -97,6 +101,11 @@
                 </li>
                 <li>WebGL
                   <a href="http://www.madebyevan.com/webgl-water/" target="_blank">WebGL Water</a>
+                </li>
+                <li>正则表达式
+                  <a href="http://www.jb51.net/tools/zhengze.html" target="_blank">正则表达式30分钟入门教程</a>
+                  /
+                  <a href="http://tool.oschina.net/regex" target="_blank">在线测试</a>
                 </li>
               </ul>
             </li>
@@ -114,7 +123,7 @@
             <li>API (Application Programming Interface) 应用程序编程接口</li>
             <li>CSS (Cascading Style Sheets) 层叠样式表</li>
             <li>HTML (Hypertext Markup Language) 超文本标记语言</li>
-            <li>JSON (JavaScript Object Notation) JavaScript对象符，轻量级的数据交换格式</li>
+            <li>JSON (JavaScript Object Notation) JavaScript对象表示法，轻量级的数据交换格式</li>
             <li>
               NPM (Node Package Manager) Node包管理器
               <a href="http://www.cnblogs.com/chyingp/p/npm.html" target="_blank">READ</a>
@@ -123,15 +132,18 @@
           </ul>
         </div>
 
-        <div id="about_me">
+        <!--<div id="about_me">
           About me
           <ul>
             <li>切图的</li>
-            <li>程序小白</li>
+            <li>入门级</li>
             <li>学习中</li>
-            <li>xy910828@gmail.com</li>
+            <li><a>xy910828@gmail.com</a></li>
           </ul>
-        </div>
+        </div>-->
+
+        <div id="result"></div>
+
 
       </section>
     </div>
@@ -143,7 +155,30 @@
       </footer>
     </div>
 
-    
+    <script id="tpl" type="text/html">
 
+      <div id="project">
+        成果
+        <ul>
+          <% for(var i=0;i<project.length;i++){ %>
+          <li><%=project[i].time%> <a href="project/<%=project[i].href%>.html"><%=project[i].title%></a></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div id="about_me">
+        About me
+        <ul>
+          <% for(var i=0;i<about_me.length;i++){ %>
+          <li><%=about_me[i].content%></li>
+          <% } %>
+          <li><a>xy910828@gmail.com</a></li>
+        </ul>
+      </div>
+
+    </script>
+
+  <!--<script src="../javascripts/main.js"></script>-->
+    <script data-main="../javascripts/main" src="../javascripts/base/require.js"></script>
   </body>
 </html>
