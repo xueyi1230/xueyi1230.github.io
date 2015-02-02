@@ -14,7 +14,7 @@ require(['jquery','baiduTemplate'],function($){
 		async : false,
 		success : function(data){
 			var test = baidu.template('tpl',data);
-			document.getElementById('result').innerHTML = test;
+			document.getElementById('main_content').innerHTML = test;
 		}
 	});
 

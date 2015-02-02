@@ -30,6 +30,8 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
+        我需要一个温柔的缓冲
+
         <!--<div id="project">
           成果
           <ul>
@@ -38,7 +40,7 @@
           </ul>
         </div>-->
 
-        <div id="collection">
+        <!--<div id="collection">
           收藏
           <ul>
 
@@ -111,9 +113,9 @@
             </li>
 
           </ul>
-        </div>
+        </div>-->
 
-        <div id="mini_knowledge">
+        <!--<div id="mini_knowledge">
           缩写、全称和简介
           <ul>
             <li>
@@ -130,7 +132,7 @@
             </li>
             <li><a href="http://www.requirejs.cn/" target="_blank">RequireJS</a>：JavaScript模块加载器，实现了AMD规范</li>
           </ul>
-        </div>
+        </div>-->
 
         <!--<div id="about_me">
           About me
@@ -141,9 +143,6 @@
             <li><a>xy910828@gmail.com</a></li>
           </ul>
         </div>-->
-
-        <div id="result"></div>
-
 
       </section>
     </div>
@@ -165,6 +164,78 @@
           <% } %>
         </ul>
       </div>
+
+      <div id="collection">
+        <% var listL,articleA; %>
+        收藏
+        <ul>
+
+          <% for(var i=0;i<collection.length;i++){ %>
+          <li id="<%=collection[i].cId%>">
+
+            <%=collection[i].cName%>
+            <ul>
+
+              <% for(var j=0;j<collection[i].list.length;j++){ listL=collection[i].list; %>
+              <li>
+
+                <%if(listL[j].sCHref){%>
+                <a href="pages/collection/<%=listL[j].sCHref%>"><%=listL[j].sCName%></a>
+                <%}else{%>
+                <%=listL[j].sCName%>
+                <%}%>：
+
+                <% for(var k=0;k<listL[j].article.length;k++){ articleA=listL[j].article; %>
+                /
+
+                <%if(articleA[k].href){%>
+                <a href="<%=articleA[k].href%>" target="_blank"><%=articleA[k].title%></a>
+                <%}else{%>
+                <%=articleA[k].title%>
+                <%}%>
+
+                <% } %>
+
+              </li>
+              <% } %>
+
+            </ul>
+          </li>
+          <% } %>
+
+        </ul>
+      </div>
+
+      <div id="mini_key">
+        缩写、全称和简介
+        <ul>
+          <% for(var i=0;i<mini_key.length;i++){ %>
+          <li>
+
+            <% if(mini_key[i].href){ %>
+            <a href="<%=mini_key[i].href%>" target="_blank"><%=mini_key[i].abb%></a>
+            <% }else{ %>
+            <%=mini_key[i].abb%>
+            <% } %>
+
+            ：
+
+            <%=mini_key[i].name%>
+
+            <% if(mini_key[i].article){ %>
+
+            <% for(var j=0;j<mini_key[i].article.length;j++){ %>
+            <a href="<%=mini_key[i].article[j].href%>" target="_blank">READ</a>
+            <% } %>
+
+            <% } %>
+
+          </li>
+          <% } %>
+
+        </ul>
+      </div>
+
 
       <div id="about_me">
         About me
