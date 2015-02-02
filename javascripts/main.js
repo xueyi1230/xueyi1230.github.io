@@ -10,7 +10,7 @@ require(['jquery','baiduTemplate'],function($){
 	console.log('早上好，中午好，晚上好，欢迎光临xueyi的博客：）');
 
 	$.ajax({
-		url :"index.json",
+		url :"pages/index.json",
 		async : false,
 		success : function(data){
 			var test = baidu.template('tpl',data);
