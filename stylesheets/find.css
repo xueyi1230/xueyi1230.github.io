@@ -1,0 +1,272 @@
+/****************************************
+重置(用啥置啥，不够再加）
+*****************************************/
+html,body,
+ol,ul,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,canvas,footer,header,section,aside{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ol,ul{
+	list-style-type: none;
+}
+table{
+	border-collapse: collapse;
+}
+
+article,canvas,footer,header,section,aside{
+	display: block;
+}
+
+/****************************************
+标签初始化
+*****************************************/
+body{
+	color: #333;
+	background: #373737;
+	font-size: 16px;
+	font-family: 'Myriad Pro', Calibri, Helvetica, Arial,"Hiragino Sans GB", "Microsoft YaHei",
+	"WenQuanYi Micro Hei", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 10px 0;
+}
+p{
+	margin: 5px 0 10px;
+}
+footer p{
+	color: #eee;
+}
+li{
+	margin: 10px 0;
+}
+a{
+	text-decoration: none;
+	color: #007edf;
+}
+a:hover,a:focus{
+	text-decoration: underline;
+}
+section{
+	padding: 20px 0;
+}
+
+/****************************************
+基本设置
+*****************************************/
+.wrap{
+	width: 100%;
+}
+.inner{
+	position: relative;
+	max-width: 980px;
+	padding: 30px 0 50px;
+	margin: 0 auto;
+}
+#forkme_banner {
+	display: block;
+	position: absolute;
+	top:0;
+	right: 10px;
+	z-index: 10;
+	padding: 13px 34px 7px 12px;
+	color: #fff;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADHSURBVDhP3ZE9EoIwFITT0dp5BXrvYM1BKGi9j6UzXMJ7eAobi+h+cQWTwGhh5Tezw/vZ90gg/Ix7zgbFGEfpRGzbOmnMaGgvXZySE+9sXeZpndHQTRqk3jHqba/xXELG7I3ErtGrr4SBJsgw6sH9G+loNa4xnL9ACcd8HXFwbSudMQMxNffyK9kwbeTpPGPNw8Z0ZDc65VcaS7jX2ZuuRJxQckiuL8DrsRn3JmTiG7TIcUn1J0pat+ixqOTjgszg2jv/sSCEB0XzdY2mNV8TAAAAAElFTkSuQmCC') #0090ff no-repeat 87% 47%;
+	font-weight: 700;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+#header_wrap {
+	background: #151515;
+	background: -moz-linear-gradient(top, #373737, #151515);
+	background: -webkit-linear-gradient(top, #373737, #151515);
+	background: -ms-linear-gradient(top, #373737, #151515);
+	background: -o-linear-gradient(top, #373737, #151515);
+	background: linear-gradient(top, #373737, #151515);
+}
+#content_wrap{
+	background: #eee;
+}
+#footer_wrap {
+	background: #151515;
+	background: -moz-linear-gradient(bottom, #373737, #151515);
+	background: -webkit-linear-gradient(bottom, #373737, #151515);
+	background: -ms-linear-gradient(bottom, #373737, #151515);
+	background: -o-linear-gradient(bottom, #373737, #151515);
+	background: linear-gradient(bottom, #373737, #151515);
+}
+
+.tag{
+	display: inline-block;
+	font-size: 12px;
+	border: 1px solid #666;
+	color: #666;
+	background: #fff;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	padding: 3px 3px 0px;
+	margin: 5px 5px 0 0;
+}
+
+.hide{
+	display: none;
+}
+.clear_margin{
+	margin-top: 0;
+}
+
+/****************************************
+移动设备
+*****************************************/
+@media screen and (max-width: 480px) {
+	body {
+		font-size:14px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 21px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	h6 {
+		font-size: 12px;
+	}
+
+	.inner {
+		min-width: 320px;
+		max-width: 480px;
+	}
+}
+
+/****************************************
+find页面样式，以上日后需整理为common.css
+*****************************************/
+.head_icon{
+	background: #333 url('../images/intro_photo.jpg');
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border: 10px solid #fff;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-top: 50px;
+}
+.intro{
+	position: absolute;
+	bottom: 50px;
+	color: #fff;
+	left: 233px;
+}
+.intro li:nth-last-child(2){
+	 margin-left: 16px;
+ }
+.intro li:nth-last-child(3){
+	margin-left: 32px;
+}
+.intro li:nth-last-child(4){
+	margin-left: 42px;
+}
+.contact{
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+	color: #fff;
+	text-align: right;
+}
+.contact li:nth-child(1):before{
+	content:"";
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPpZM9DoJAEIXXE1BQ2RAKD+AhPIBXsbO0tbOh5RRcwsrSI1hbUJGA3xsGQoxx1/glmzezM2+H3/CJYRiyvu8PrDsr9+04GHcYHqhBfPZSHDW7zyBvk6fTX9DcjdaRX6dX7jPIGy/FoX85/ejb6UzT0Suy8u00MK1ZrQ6AvW+ng/kiJ3pD/p+OZlZMAbO9d1RfW+2HlV7+Ds25G2Z0iJfj0Pz+1XWsje5B2H14bJdE8Um89VjTlc+Q15NBZK6iXDTbAehpTOfJlT29cctUv6JMpcf6uyaz8kYm4iKEEF5RA3l4Xi/XqwAAAABJRU5ErkJggg==") no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 15px;
+	height: 16px;
+	margin-right: 7px;
+}
+.contact li:nth-child(2):before{
+	content:"";
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPpZKxEYQgFESpQEuwCLsgsAdS67Ac44uJrgsbMLjYiLtdWGa8cU7BezNf+P/vMiCYPSGEBjEiHoj1LThXjb1G8m/QcIiXPD+hhlrZEihM6hdDTzZb1aqh12D0Kb2F5w42JVyxw9CmrCjfuIM9LY+lOTnN4wL4PJXfIR5hUFINvJY7+u8aMyg49U6B7viQMtIcgOH6KRPp49+lWOVyZF4w9CrVAfMMc7zrMoz5AODcm8pg64aIAAAAAElFTkSuQmCC") no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	margin-right: 7px;
+	vertical-align: top;
+}
+
+#content{
+	background: #eee;
+}
+
+aside{
+	float: right;
+	padding: 10px 20px 30px;
+	margin-top: 20px;
+	background: #fff;
+	max-width: 200px;
+}
+
+section{
+	width: 700px;
+}
+h4 span{
+	font-weight: 400;
+	color: #777;
+	margin-right: 10px;
+}
+.type{
+	background: #fff;
+	display: inline-block;
+	width: 0;
+	height: 30px;
+	line-height: 32px;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	-o-transition:width 0.5s;
+	color: #fff;
+	font-style: normal;
+	padding-left: 11px;
+}
+.type:hover{
+	width: 39px;
+}
+.t_red{
+	background: #FF6E6E;
+}
+.t_green{
+	 background: #6CFF82;
+ }
+.t_blue{
+	background: #53C5FF;
+}
+.t_red:hover:after{
+	content: 'Intro';
+}
+.t_green:hover:after{
+	content: 'Task';
+}
+.t_blue:hover:after{
+	content: 'Get';
+}
+
+
+.list_style li{
+	list-style-type: circle;
+	margin-left: 17px;
+}

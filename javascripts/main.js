@@ -13,8 +13,8 @@ require(['jquery','baiduTemplate'],function($){
 		url :"pages/index.json",
 		async : false,
 		success : function(data){
-			var test = baidu.template('tpl',data);
-			document.getElementById('main_content').innerHTML = test;
+			var index = baidu.template('tpl',data);
+			$("#main_content").html(index);
 		}
 	});
 

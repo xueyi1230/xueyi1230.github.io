@@ -11,37 +11,17 @@
 			"title" : "WebSocket实时加密聊天室"
 		}
 	],
-	"about_me" : [
-		{
-			"content" : "切图的"
-		},
-		{
-			"content" : "入门级"
-		},
-		{
-			"content" : "学习中"
-		}
-	],
 	"collection" : [
 		{
-			"cId"   : "mobleweb",
-			"cName" : "移动Web",
+			"cId"   : "read",
+			"cName" : "阅读",
 			"list"  : [
 				{
-					"sCName"  : "推荐阅读",
+					"sCName"  : "移动Web",
 					"article" : [
 						{
 							"href"  : "http://www.cnblogs.com/codemood/p/3213459.html",
 							"title" : "为什么移动Web应用程序很慢"
-						}
-					]
-				},
-				{
-					"sCName"  : "插件",
-					"article" : [
-						{
-							"href"  : "http://blog.csdn.net/ihetqxl/article/details/36538665",
-							"title" : "IScroll5中文API整理,用法与参考"
 						}
 					]
 				}
@@ -49,14 +29,73 @@
 		},
 		{
 			"cId"   : "css3",
-			"cName" : "CSS3",
+			"cName" : "CSS",
 			"list"  : [
+				{
+					"sCName"  : "Animate.css",
+					"sCHref"  : "http://daneden.github.io/animate.css/",
+					"article" : [
+						{
+							"href"  : "css3动画简介以及动画库animate.css的使用",
+							"title" : "http://www.cnblogs.com/2050/p/3409129.html"
+						}
+					]
+				},
 				{
 					"sCName"  : "tansform:translate3d",
 					"article" : [
 						{
 							"href"  : "https://www.illumio.com/",
 							"title" : "illumio"
+						}
+					]
+				}
+			]
+		},
+		{
+			"cId"   : "plugin",
+			"cName" : "JS插件",
+			"list"  : [
+				{
+					"sCName"  : "IScroll5",
+					"sCHref"  : "http://cubiq.org/iscroll-5",
+					"article" : [
+						{
+							"href"  : "http://blog.csdn.net/ihetqxl/article/details/36538665",
+							"title" : "IScroll5中文API整理,用法与参考"
+						},
+						{
+							"href"  : "https://github.com/iiunknown/iscroll5.doc.cn",
+							"title" : "iScroll 5 API 中文版"
+						}
+					]
+				},
+				{
+					"sCName"  : "One Page Scroll",
+					"article" : [
+						{
+							"href"  : "http://www.dowebok.com/118.html",
+							"title" : "onepage-scroll – jQuery单页/全屏滚动插件"
+						}
+					]
+				},
+				{
+					"sCName"  : "Owl Carousel",
+					"sCHref"  : "http://www.owlcarousel.owlgraphic.com/",
+					"article" : [
+						{
+							"href"  : "http://www.dowebok.com/93.html",
+							"title" : "强大实用的jQuery幻灯片插件Owl Carousel"
+						}
+					]
+				},
+				{
+					"sCName"  : "ZeroClipboard",
+					"sCHref"  : "http://zeroclipboard.org/",
+					"article" : [
+						{
+							"href"  : "http://www.cnblogs.com/yangjunhua/archive/2012/09/10/2678817.html",
+							"title" : "ZeroClipboard实现复制功能"
 						}
 					]
 				}
@@ -132,6 +171,10 @@
 						{
 							"href"  : "http://www.cnblogs.com/tomxu/archive/2012/02/20/2352817.html",
 							"title" : "设计模式之单例模式"
+						},
+						{
+							"href"  : "http://www.cnblogs.com/bigbearbb/p/4182111.html#3096040",
+							"title" : "大熊君说说JS与设计模式之------单例模式Singleton（）"
 						}
 					]
 				},
@@ -149,7 +192,7 @@
 					"article" : [
 						{
 							"href"  : "http://www.jb51.net/tools/zhengze.html",
-							"title" : "正则表达式30分钟入门教程"
+							"title" : "正则表达式30分钟（误）入门教程"
 						},
 						{
 							"href"  : "http://tool.oschina.net/regex,",
@@ -199,6 +242,25 @@
 			"abb"  : "RequireJS",
 			"href" : "http://www.requirejs.cn/",
 			"name" : "JavaScript模块加载器，实现了AMD规范"
+		},
+		{
+			"abb"  : "URI",
+			"name" : "(Uniform Resource Identifier) 统一资源标识符，包括URN和URL"
+		},
+		{
+			"abb"  : "URL",
+			"name" : "(Uniform Resource Locator) 统一资源定位符"
+		}
+	],
+	"about_me" : [
+		{
+			"content" : "切图的"
+		},
+		{
+			"content" : "入门级"
+		},
+		{
+			"content" : "学习中"
 		}
 	]
 }
