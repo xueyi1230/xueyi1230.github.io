@@ -222,10 +222,14 @@ aside{
 section{
 	width: 700px;
 }
-h4 span{
+h4 > span{
 	font-weight: 400;
 	color: #777;
 	margin-right: 10px;
+}
+h4 > span:last-child{
+	margin-left: 10px;
+	font-size: 12px;
 }
 .type{
 	background: #fff;
