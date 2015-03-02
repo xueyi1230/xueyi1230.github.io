@@ -1,161 +1,9 @@
-/****************************************
-重置(用啥置啥，不够再加）
-*****************************************/
-html,body,
-ol,ul,
-table,caption,tbody,tfoot,thead,tr,th,td,
-article,canvas,footer,header,section,aside{
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
 ol,ul{
-	list-style-type: none;
+	list-style: none;
+	padding: 0;
 }
-table{
-	border-collapse: collapse;
-}
-
-article,canvas,footer,header,section,aside{
-	display: block;
-}
-
-/****************************************
-标签初始化
-*****************************************/
-body{
-	color: #333;
-	background: #373737;
-	font-size: 16px;
-	font-family: 'Myriad Pro', Calibri, Helvetica, Arial,"Hiragino Sans GB", "Microsoft YaHei",
-	"WenQuanYi Micro Hei", sans-serif;
-}
-h1,h2,h3,h4,h5,h6{
-	margin: 10px 0;
-}
-p{
-	margin: 5px 0 10px;
-}
-footer p{
-	color: #eee;
-}
-li{
-	margin: 10px 0;
-}
-a{
-	text-decoration: none;
-	color: #007edf;
-}
-a:hover,a:focus{
-	text-decoration: underline;
-}
-section{
-	padding: 20px 0;
-}
-
-/****************************************
-基本设置
-*****************************************/
-.wrap{
-	width: 100%;
-}
-.inner{
-	position: relative;
-	max-width: 980px;
-	padding: 30px 0 50px;
-	margin: 0 auto;
-}
-#forkme_banner {
-	display: block;
-	position: absolute;
-	top:0;
-	right: 10px;
-	z-index: 10;
-	padding: 13px 34px 7px 12px;
-	color: #fff;
-	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADHSURBVDhP3ZE9EoIwFITT0dp5BXrvYM1BKGi9j6UzXMJ7eAobi+h+cQWTwGhh5Tezw/vZ90gg/Ix7zgbFGEfpRGzbOmnMaGgvXZySE+9sXeZpndHQTRqk3jHqba/xXELG7I3ErtGrr4SBJsgw6sH9G+loNa4xnL9ACcd8HXFwbSudMQMxNffyK9kwbeTpPGPNw8Z0ZDc65VcaS7jX2ZuuRJxQckiuL8DrsRn3JmTiG7TIcUn1J0pat+ixqOTjgszg2jv/sSCEB0XzdY2mNV8TAAAAAElFTkSuQmCC') #0090ff no-repeat 87% 47%;
-	font-weight: 700;
-	box-shadow: 0 0 10px rgba(0,0,0,.5);
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-}
-#header_wrap {
-	background: #151515;
-	background: -moz-linear-gradient(top, #373737, #151515);
-	background: -webkit-linear-gradient(top, #373737, #151515);
-	background: -ms-linear-gradient(top, #373737, #151515);
-	background: -o-linear-gradient(top, #373737, #151515);
-	background: linear-gradient(top, #373737, #151515);
-}
-#content_wrap{
-	background: #eee;
-}
-#footer_wrap {
-	background: #151515;
-	background: -moz-linear-gradient(bottom, #373737, #151515);
-	background: -webkit-linear-gradient(bottom, #373737, #151515);
-	background: -ms-linear-gradient(bottom, #373737, #151515);
-	background: -o-linear-gradient(bottom, #373737, #151515);
-	background: linear-gradient(bottom, #373737, #151515);
-}
-
-.tag{
-	display: inline-block;
-	font-size: 12px;
-	border: 1px solid #666;
-	color: #666;
-	background: #fff;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	padding: 3px 3px 0px;
-	margin: 5px 5px 0 0;
-}
-
-.hide{
-	display: none;
-}
-.clear_margin{
-	margin-top: 0;
-}
-
-/****************************************
-移动设备
-*****************************************/
-@media screen and (max-width: 480px) {
-	body {
-		font-size:14px;
-	}
-	h1 {
-		font-size: 28px;
-	}
-	h2 {
-		font-size: 24px;
-	}
-	h3 {
-		font-size: 21px;
-	}
-	h4 {
-		font-size: 18px;
-	}
-	h5 {
-		font-size: 14px;
-	}
-	h6 {
-		font-size: 12px;
-	}
-
-	.inner {
-		min-width: 320px;
-		max-width: 480px;
-	}
-}
-
-/****************************************
-find页面样式，以上日后需整理为common.css
-*****************************************/
-.head_icon{
-	background: #333 url('../images/intro_photo.jpg');
+.head_photo{
+	background: #1d953c url('../images/intro_photo.jpg');
 	background-size: cover;
 	width: 200px;
 	height: 200px;
@@ -164,7 +12,6 @@ find页面样式，以上日后需整理为common.css
 	-o-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	margin-top: 50px;
 }
 .intro{
 	position: absolute;
@@ -211,17 +58,7 @@ find页面样式，以上日后需整理为common.css
 	background: #eee;
 }
 
-aside{
-	float: right;
-	padding: 10px 20px 30px;
-	margin-top: 20px;
-	background: #fff;
-	max-width: 200px;
-}
 
-section{
-	width: 700px;
-}
 h4 > span{
 	font-weight: 400;
 	color: #777;

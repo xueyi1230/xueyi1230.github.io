@@ -166,19 +166,6 @@
 			"cName" : "其他",
 			"list"  : [
 				{
-					"sCName"  : "单例模式",
-					"article" : [
-						{
-							"href"  : "http://www.cnblogs.com/tomxu/archive/2012/02/20/2352817.html",
-							"title" : "设计模式之单例模式"
-						},
-						{
-							"href"  : "http://www.cnblogs.com/bigbearbb/p/4182111.html#3096040",
-							"title" : "大熊君说说JS与设计模式之------单例模式Singleton（）"
-						}
-					]
-				},
-				{
 					"sCName"  : "WebGL",
 					"article" : [
 						{
@@ -250,17 +237,6 @@
 		{
 			"abb"  : "URL",
 			"name" : "(Uniform Resource Locator) 统一资源定位符"
-		}
-	],
-	"about_me" : [
-		{
-			"content" : "切图的"
-		},
-		{
-			"content" : "入门级"
-		},
-		{
-			"content" : "学习中"
 		}
 	]
 }

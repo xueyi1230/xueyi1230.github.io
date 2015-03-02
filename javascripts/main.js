@@ -14,8 +14,15 @@ require(['jquery','baiduTemplate'],function($){
 		async : false,
 		success : function(data){
 			var index = baidu.template('tpl',data);
-			$("#main_content").html(index);
+			$("#main_content").html(index).children().show(1000);
+			setTimeout(function(){
+				$("#gotop").show().click(function(){
+					$('body').animate({scrollTop:0},700);
+				});
+			},500);
 		}
 	});
+
+
 
 });
