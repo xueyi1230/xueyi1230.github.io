@@ -4,11 +4,6 @@
 			"time"  : "2015/01/27",
 			"href"  : "requirejs",
 			"title" : "一个简易的RequireJS Demo"
-		},
-		{
-			"time"  : "2015/01/26",
-			"href"  : "chat",
-			"title" : "WebSocket实时加密聊天室"
 		}
 	],
 	"collection" : [
@@ -36,8 +31,8 @@
 					"sCHref"  : "http://daneden.github.io/animate.css/",
 					"article" : [
 						{
-							"href"  : "css3动画简介以及动画库animate.css的使用",
-							"title" : "http://www.cnblogs.com/2050/p/3409129.html"
+							"href"  : "http://www.cnblogs.com/2050/p/3409129.html",
+							"title" : "css3动画简介以及动画库animate.css的使用"
 						}
 					]
 				},
