@@ -22,7 +22,7 @@
 
           <h1 id="project_title">削一个博客</h1>
           <h2 id="project_tagline">Cut A blog & </h2>
-          <p class="font_hide">之前总结的一些要点需要一点点放上来</p>
+          <p>学习笔记待搬运</p>
 
         </header>
     </div>
@@ -33,127 +33,15 @@
         <aside>
           <h3>About me</h3>
           <ul>
-            <li>切图的</li>
+            <li>Web前端</li>
             <li>入门级</li>
-            <li>学习中</li>
+            <li>找工作中</li>
             <li><a>xy910828@gmail.com</a></li>
           </ul>
         </aside>
         <section id="main_content" class="one_column_width">
 
           我需要一个简单的缓冲画面
-
-          <!--<div id="project">
-            成果
-            <ul>
-              <li>2015/01/27 <a href="project/requirejs.html">一个简易的RequireJS Demo</a></li>
-              <li>2015/01/26 <a href="project/chat.html">WebSocket实时加密聊天室</a></li>
-            </ul>
-          </div>-->
-
-          <!--<div id="collection">
-            收藏
-            <ul>
-
-              <li id="mobleweb">
-                移动Web
-                <ul>
-                  <li>推荐阅读：
-                    <a href="http://www.cnblogs.com/codemood/p/3213459.html">为什么移动Web应用程序很慢</a>
-                  </li>
-                  <li>插件：
-                    <a href="http://blog.csdn.net/ihetqxl/article/details/36538665">IScroll5中文API整理,用法与参考</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li id="css3">
-                CSS3
-                <ul>
-                  <li>
-                    tansform:translate3d
-                    <a href="https://www.illumio.com/" target="_blank">illumio</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li id="tool">
-              工具
-              <ul>
-                <li>markdown
-                  <a href="https://www.zybuluo.com/mdeditor" target="_blank">在线 Markdown 编辑阅读器</a>
-                  /
-                  <a href="http://www.zhihu.com/question/20409634" target="_blank">怎样引导新手使用 Markdown？</a>
-                </li>
-                <li>笔记工具
-                  <a href="http://www.douban.com/doulist/1804646/" target="_blank">印象笔记之使用窍门</a>
-                  /
-                  <a href="http://www.zhihu.com/question/20418504" target="_blank">印象笔记（Evernote）有哪些常见的用途？</a>
-                  /
-                  <a href="http://www.zhihu.com/question/21438053" target="_blank">知乎：学习编程用什么做笔记比较好？</a>
-                </li>
-                <li>GitHub
-                  <a href="http://www.zhihu.com/question/19771598" target="_blank">在 GitHub 可以做什么，用户又习惯做些什么？</a>
-                  /
-                  .gitignore
-                  /
-                  .gitattributes
-                </li>
-                <li>
-                  <a href="pages/collection/webstorm.html">WebStorm</a>
-                  常用快捷键
-                </li>
-              </ul>
-            </li>
-
-              <li id="other">
-                其他
-                <ul>
-                  <li>单例模式
-                    <a href="http://www.cnblogs.com/tomxu/archive/2012/02/20/2352817.html" target="_blank">设计模式之单例模式</a>
-                  </li>
-                  <li>WebGL
-                    <a href="http://www.madebyevan.com/webgl-water/" target="_blank">WebGL Water</a>
-                  </li>
-                  <li>正则表达式
-                    <a href="http://www.jb51.net/tools/zhengze.html" target="_blank">正则表达式30分钟入门教程</a>
-                    /
-                    <a href="http://tool.oschina.net/regex" target="_blank">在线测试</a>
-                  </li>
-                </ul>
-              </li>
-
-            </ul>
-          </div>-->
-
-          <!--<div id="mini_knowledge">
-            缩写、全称和简介
-            <ul>
-              <li>
-                AMD (Asynchronous Module Definition) 异步模块定义
-                <a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank">READ</a>
-              </li>
-              <li>API (Application Programming Interface) 应用程序编程接口</li>
-              <li>CSS (Cascading Style Sheets) 层叠样式表</li>
-              <li>HTML (Hypertext Markup Language) 超文本标记语言</li>
-              <li>JSON (JavaScript Object Notation) JavaScript对象表示法，轻量级的数据交换格式</li>
-              <li>
-                NPM (Node Package Manager) Node包管理器
-                <a href="http://www.cnblogs.com/chyingp/p/npm.html" target="_blank">READ</a>
-              </li>
-              <li><a href="http://www.requirejs.cn/" target="_blank">RequireJS</a>：JavaScript模块加载器，实现了AMD规范</li>
-            </ul>
-          </div>-->
-
-          <!--<div id="about_me">
-            About me
-            <ul>
-              <li>切图的</li>
-              <li>入门级</li>
-              <li>学习中</li>
-              <li><a>xy910828@gmail.com</a></li>
-            </ul>
-          </div>-->
 
         </section>
         <div id="gotop" class="hide">Go Top</div>
@@ -167,7 +55,7 @@
       </footer>
     </div>
 
-    <!-- Script  -->
+    <!-- Script -->
     <script id="tpl" type="text/html">
 
       <div id="project" class="hide">
@@ -179,80 +67,51 @@
         </ul>
       </div>
 
-      <div id="collection" class="hide">
-        <% var listL,articleA; %>
-        收藏
+      <div id="note" class="hide">
+        学习笔记
         <ul>
 
-          <% for(var i=0;i<collection.length;i++){ %>
-          <li id="<%=collection[i].cId%>">
-
-            <%=collection[i].cName%>
-            <ul>
-
-              <% for(var j=0;j<collection[i].list.length;j++){ listL=collection[i].list; %>
-              <li>
-
-                <%if(listL[j].sCHref){%>
-                <a href="<%=listL[j].sCHref%>"><%=listL[j].sCName%></a>
-                <%}else{%>
-                <%=listL[j].sCName%>
-                <%}%>：
-
-                <% for(var k=0;k<listL[j].article.length;k++){ articleA=listL[j].article; %>
-                /
-
-                <%if(articleA[k].href){%>
-                <a href="<%=articleA[k].href%>" target="_blank"><%=articleA[k].title%></a>
-                <%}else{%>
-                <%=articleA[k].title%>
-                <%}%>
-
-                <% } %>
-
-              </li>
+          <% for(var i=0;i<note.length;i++){ %>
+          <li>
+            <a href="pages/note/<%=note[i].cId%>.html"><%=note[i].cName%></a>
+            ：
+              <% for(var j=0;j<note[i].list.length;j++){ %>
+                   / <%=note[i].list[j]%>
               <% } %>
-
-            </ul>
           </li>
           <% } %>
 
         </ul>
       </div>
 
-      <div id="mini_key" class="hide">
-        缩写、全称和简介
+      <div id="collection" class="hide">
+        <% var listL; %>
+        收藏
+
         <ul>
-          <% for(var i=0;i<mini_key.length;i++){ %>
+
+          <% for(var i=0;i<collection.length;i++){ %>
           <li>
-
-            <% if(mini_key[i].href){ %>
-            <a href="<%=mini_key[i].href%>" target="_blank"><%=mini_key[i].abb%></a>
-            <% }else{ %>
-            <%=mini_key[i].abb%>
-            <% } %>
-
+            <a href="pages/collection/<%=collection[i].cId%>.html"><%=collection[i].cName%></a>
             ：
+            <% for(var j=0;j<collection[i].list.length;j++){ listL=collection[i].list; %>
+              /
+              <%if(listL[j].sCHref){%>
+              <a href="<%=listL[j].sCHref%>"><%=listL[j].sCName%></a>
+              <% }else{ %>
+              <%=listL[j]%>
+              <% } %>
 
-            <%=mini_key[i].name%>
-
-            <% if(mini_key[i].article){ %>
-
-            <% for(var j=0;j<mini_key[i].article.length;j++){ %>
-            <a href="<%=mini_key[i].article[j].href%>" target="_blank">READ</a>
             <% } %>
-
-            <% } %>
-
           </li>
           <% } %>
 
         </ul>
+
       </div>
 
     </script>
 
-  <!--<script src="../javascripts/main.js"></script>-->
-    <script data-main="javascripts/main" src="javascripts/base/require.js"></script>
+    <script data-main="javascripts/index" src="javascripts/base/require.js"></script>
   </body>
 </html>

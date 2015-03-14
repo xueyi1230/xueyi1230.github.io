@@ -6,232 +6,82 @@
 			"title" : "一个简易的RequireJS Demo"
 		}
 	],
-	"collection" : [
+	"note" : [
 		{
-			"cId"   : "read",
-			"cName" : "阅读",
-			"list"  : [
-				{
-					"sCName"  : "移动Web",
-					"article" : [
-						{
-							"href"  : "http://www.cnblogs.com/codemood/p/3213459.html",
-							"title" : "为什么移动Web应用程序很慢"
-						}
-					]
-				}
-			]
+			"cId"   : "css",
+			"cName" : "CSS",
+			"list"  : ["CSS库"]
 		},
 		{
-			"cId"   : "css3",
-			"cName" : "CSS",
+			"cId"   : "html",
+			"cName" : "HTML",
+			"list"  : [".html与.htm的区别","两种在客户端存储数据的方法","HTML5语义元素","Canvas和SVG"]
+		},
+		{
+			"cId"   : "smarty",
+			"cName" : "Smarty",
+			"list"  : ["参考资料"]
+		},
+		{
+			"cId"   : "webstorm",
+			"cName" : "WebStorm",
+			"list"  : ["常用快捷键"]
+		},
+		{
+			"cId"   : "regex",
+			"cName" : "正则表达式",
+			"list"  : ["入门教程","在线测试"]
+		},
+		{
+			"cId"   : "minikey",
+			"cName" : "缩写、全称和简介",
+			"list"  : ["AMD","API","CSS","HTML","JSON","NPM","RequireJS","URI","URL"]
+		}
+	],
+	"collection" : [
+		{
+			"cId"   : "cssplugin",
+			"cName" : "CSS库",
 			"list"  : [
 				{
 					"sCName"  : "Animate.css",
-					"sCHref"  : "http://daneden.github.io/animate.css/",
-					"article" : [
-						{
-							"href"  : "http://www.cnblogs.com/2050/p/3409129.html",
-							"title" : "css3动画简介以及动画库animate.css的使用"
-						}
-					]
-				},
-				{
-					"sCName"  : "tansform:translate3d",
-					"article" : [
-						{
-							"href"  : "https://www.illumio.com/",
-							"title" : "illumio"
-						}
-					]
+					"sCHref" : "http://daneden.github.io/animate.css/"
 				}
 			]
 		},
 		{
-			"cId"   : "plugin",
+			"cId"   : "jsplugin",
 			"cName" : "JS插件",
 			"list"  : [
 				{
-					"sCName"  : "IScroll5",
-					"sCHref"  : "http://cubiq.org/iscroll-5",
-					"article" : [
-						{
-							"href"  : "http://blog.csdn.net/ihetqxl/article/details/36538665",
-							"title" : "IScroll5中文API整理,用法与参考"
-						},
-						{
-							"href"  : "https://github.com/iiunknown/iscroll5.doc.cn",
-							"title" : "iScroll 5 API 中文版"
-						}
-					]
+					"sCName"  :"IScroll5",
+					"sCHref"  : "http://cubiq.org/iscroll-5"
 				},
 				{
-					"sCName"  : "One Page Scroll",
-					"article" : [
-						{
-							"href"  : "http://www.dowebok.com/118.html",
-							"title" : "onepage-scroll – jQuery单页/全屏滚动插件"
-						}
-					]
+					"sCName"  :"One Page Scroll",
+					"sCHref"  : "http://cubiq.org/iscroll-5"
 				},
 				{
 					"sCName"  : "Owl Carousel",
-					"sCHref"  : "http://www.owlcarousel.owlgraphic.com/",
-					"article" : [
-						{
-							"href"  : "http://www.dowebok.com/93.html",
-							"title" : "强大实用的jQuery幻灯片插件Owl Carousel"
-						}
-					]
+					"sCHref"  : "http://www.owlcarousel.owlgraphic.com/"
 				},
 				{
 					"sCName"  : "ZeroClipboard",
-					"sCHref"  : "http://zeroclipboard.org/",
-					"article" : [
-						{
-							"href"  : "http://www.cnblogs.com/yangjunhua/archive/2012/09/10/2678817.html",
-							"title" : "ZeroClipboard实现复制功能"
-						}
-					]
+					"sCHref"  : "http://zeroclipboard.org/"
 				}
 			]
 		},
 		{
-			"cId"   : "tool",
-			"cName" : "工具",
-			"list"  : [
-				{
-					"sCName"  : "markdown",
-					"article" : [
-						{
-							"href"  : "https://www.zybuluo.com/mdeditor",
-							"title" : "在线 Markdown 编辑阅读器"
-						},
-						{
-							"href"  : "http://www.zhihu.com/question/20409634",
-							"title" : "怎样引导新手使用 Markdown？"
-						}
-					]
-				},
-				{
-					"sCName"  : "笔记工具",
-					"article" : [
-						{
-							"href"  : "http://www.douban.com/doulist/1804646/",
-							"title" : "印象笔记之使用窍门"
-						},
-						{
-							"href"  : "http://www.zhihu.com/question/20418504",
-							"title" : "印象笔记（Evernote）有哪些常见的用途？"
-						},
-						{
-							"href"  : "http://www.zhihu.com/question/21438053",
-							"title" : "知乎：学习编程用什么做笔记比较好？"
-						}
-					]
-				},
-				{
-					"sCName"  : "GitHub",
-					"article" : [
-						{
-							"href"  : "http://www.zhihu.com/question/19771598",
-							"title" : "在 GitHub 可以做什么，用户又习惯做些什么？"
-						},
-						{
-							"title" : " .gitignore"
-						},
-						{
-							"title" : ".gitattributes"
-						}
-					]
-				},
-				{
-					"sCName"  : "WebStorm",
-					"sCHref"  : "webstorm.html",
-					"article" : [
-						{
-							"title" : "常用快捷键"
-						}
-					]
-				}
-			]
+			"cId"   : "read",
+			"cName" : "推荐阅读",
+			"list"  : ["移动Web","网页设计","GitHub"]
 		},
 		{
-			"cId"   : "other",
-			"cName" : "其他",
-			"list"  : [
-				{
-					"sCName"  : "WebGL",
-					"article" : [
-						{
-							"href"  : "http://www.madebyevan.com/webgl-water/",
-							"title" : "WebGL Water"
-						}
-					]
-				},
-				{
-					"sCName"  : "正则表达式",
-					"article" : [
-						{
-							"href"  : "http://www.jb51.net/tools/zhengze.html",
-							"title" : "正则表达式30分钟（误）入门教程"
-						},
-						{
-							"href"  : "http://tool.oschina.net/regex,",
-							"title" : "在线测试"
-						}
-					]
-				}
-			]
+			"cId"   : "webpage",
+			"cName" : "一些网站",
+			"list"  : ["欣赏","使用","社区"]
 		}
-	],
-	"mini_key" : [
-		{
-			"abb"  : "AMD",
-			"name" : "(Asynchronous Module Definition) 异步模块定义",
-			"article" : [
-				{
-					"href"  : "http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html"
-				}
-			]
-		},
-		{
-			"abb"  : "API",
-			"name" : "(Application Programming Interface) 应用程序编程接口"
-		},
-		{
-			"abb"  : "CSS",
-			"name" : "(Cascading Style Sheets) 层叠样式表"
-		},
-		{
-			"abb"  : "HTML",
-			"name" : "(Hypertext Markup Language) 超文本标记语言"
-		},
-		{
-			"abb"  : "JSON",
-			"name" : "(JavaScript Object Notation) JavaScript对象表示法，轻量级的数据交换格式"
-		},
-		{
-			"abb"  : "NPM",
-			"name" : "(Node Package Manager) Node包管理器",
-			"article" : [
-				{
-					"href"  : "http://www.cnblogs.com/chyingp/p/npm.html"
-				}
-			]
-		},
-		{
-			"abb"  : "RequireJS",
-			"href" : "http://www.requirejs.cn/",
-			"name" : "JavaScript模块加载器，实现了AMD规范"
-		},
-		{
-			"abb"  : "URI",
-			"name" : "(Uniform Resource Identifier) 统一资源标识符，包括URN和URL"
-		},
-		{
-			"abb"  : "URL",
-			"name" : "(Uniform Resource Locator) 统一资源定位符"
-		}
+
 	]
+
 }

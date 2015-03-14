@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="keywords" content="HTML HTML5 学习笔记">
+		<meta name="description" content="HTML学习笔记">
+		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVFhHzZeBbQIxDEVvha7ACqzQFViBFVihK3SFrtAVugIrsAL4o37JtZy7n8Qn+qQnhDhskjhOWP4D9wnPpufbzJ7LTPkxs4e9F1OF8T6e7wSOZkwYvZkHcwvGkpMTfCEmjX6ZW1x/7ebNxBezxN53swUHgVkY4mTGhNHW6PDD8HlPraRgmmPSaEzC2UPxTYNCQ8FliWksyE9TLVIJjDBL7GVBctnwWorSG5AUI1d2RzdKb4BYe9TALii9Aeu/GxW9YZqZ3lDGSG8oRekNsKwPZPT0hnLUYoTlDQlgqyG4MgvlfYG7gBcM/pg1uy8jLVh8fpthdEpBDt8JPNx+MZiyFLioTsEkrf2tHFbx9iyDqUeAtQuGclhhqYYKkqPbWsddDisGbU29p/yw4rT23O3KDis/mt7jVflrtjqjSO6D9B4qLNo1UZB/4mYPtczg/4BRX8myPADtZ1yhbGvycAAAAABJRU5ErkJggg==">
+		<link rel="apple-touch-icon" href="../../images/logo.png">
+		<link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/common.css">
+
+		<title>HTML学习笔记</title>
+	</head>
+
+	<body>
+
+	<!-- Header -->
+	<div id="header_wrap" class="outer font_light">
+
+		<header class="inner one_column_width">
+			<a id="forkme_banner" href="../../index.html">Index</a>
+			<h1 id="project_title">HTML学习笔记</h1>
+		</header>
+
+	</div>
+
+	<!-- Content -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner one_column_width">
+			<ul>
+				<li>.html与.htm的区别
+					<table>
+						<tr>
+							<th>.html</th>
+							<th>.htm</th>
+						</tr>
+						<tr>
+							<td>Netscape</td>
+							<td>Microsoft</td>
+						</tr>
+						<tr>
+							<td>Netscape多用于UNIX等系统</td>
+							<td>Microsoft===windows(dos)</td>
+						</tr>
+						<tr>
+							<td>html是为长文件名的格式命名</td>
+							<td>而htm是为了兼容过去的DOS命名格式存在的</td>
+						</tr>
+						<tr>
+							<td colspan="2">在效果上没有区别的</td>
+						</tr>
+					</table>
+				</li>
+				<li>两种在客户端存储数据的方法：<br>
+					localStorage -没有时间限制；<br>
+					sessionStorage -针对一个会话的数据存储，关闭会话即删除数据。<br>
+					HTML5用 Javascript 来存储和访问数据。<br>
+					<div class="demo">
+						eg.<br>
+						localStorage.lastname="xue";<br>
+						sessionStorage.firstname="yi";<br>
+					</div>
+				</li>
+				<li>HTML5语义元素
+					<img src="../../images/pages/html_html5.png"><br>
+					为了让这些块及元素在所有版本的浏览器中生效，你需要在样式表文件中设置一下属性 (以下样式代码可以让旧版本浏览器支持本章介绍的块级元素):
+					<div class="demo">
+					header, section, footer, aside, nav, article, figure<br>
+					{<br>
+					display: block;<br>
+					}
+					</div>
+					IE8 及更早IE版本无法在这些元素中渲染CSS效果，以至于你不能使用 &#60;header&#62;, &#60;section&#62;, &#60;footer&#62;, &#60;aside&#62;, &#60;nav&#62;, &#60;article&#62;, &#60;figure&#62;, 或者其他的HTML5 elements.<br>
+					解决办法:你可以使用HTML5 Shiv Javascript脚本来解决IE的兼容问题。<a href="http://code.google.com/p/html5shiv/">HTML5 Shiv下载地址</a><br>
+					下载后，将以下代码放入的网页中：
+					<div class="demo">
+					&#60;!--[if lt IE 9]&#62;<br>
+					&#60;script src="html5shiv.js"&#62;&#60;/script&#62;<br>
+					&#60;![endif]--&#62;
+					</div>
+					以上代码在浏览器小于IE9版本时会加载html5shiv.js文件. 你必须将其放置于&#60;head&#62; 元素中，因为 IE浏览器需要在头部加载后渲染这些HTML5的新元素
+				</li>
+				<li>Canvas和SVG
+					<table>
+						<tr>
+							<th>Canvas</th>
+							<th>SVG</th>
+						</tr>
+						<tr>
+							<td>用于图形的绘制，通过脚本 (通常是JavaScript)来完成。&#60;canvas&#62; 标签只是图形容器，您必须使用脚本来绘制图形。</td>
+							<td>可伸缩矢量图形 (Scalable Vector Graphics)</td>
+						</tr>
+						<tr>
+							<td>通过 JavaScript 来绘制 2D 图形。</td>
+							<td>SVG 是一种使用 XML 描述 2D 图形的语言。</td>
+						</tr>
+						<tr>
+							<td>是逐像素进行渲染的。在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象。</td>
+							<td>SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。
+								在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+			<div id="gotop" class="hide">Go Top</div>
+		</section>
+	</div>
+
+	<!-- Footer  -->
+	<div id="footer_wrap" class="outer font_light">
+		<footer class="inner one_column_width">
+			<p>© xueyi | Published with <a href="http://pages.github.com" class="a_light">GitHub Pages</a></p>
+		</footer>
+	</div>
+
+	<script data-main="../../javascripts/common" src="../../javascripts/base/require.js"></script>
+	</body>
+</html>

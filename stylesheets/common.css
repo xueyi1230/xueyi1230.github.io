@@ -22,7 +22,7 @@ table{
 	margin-bottom: 20px;
 	text-align: left;
 }
-td {
+th,td {
 	padding: 10px;
 	border: 1px solid #373737;
 }
@@ -67,7 +67,7 @@ aside{
 	padding: 10px 2.5% 30px;
 	margin-top: 20px;
 	background: #fff;
-	width: 21%;
+	width: 22%;
 }
 
 /****************************************
@@ -87,7 +87,7 @@ aside{
 }
 .two_column_width{
 	width: 70%;
-	min-width: 640px;
+	min-width: 720px;
 	max-width: 1260px;
 }
 #header_wrap {
@@ -135,6 +135,7 @@ aside{
 #footer_wrap{
 	background: #1d953c;
 }
+
 .tag{
 	display: inline-block;
 	font-size: 12px;
@@ -147,6 +148,25 @@ aside{
 	padding: 3px 3px 0px;
 	margin: 5px 5px 0 0;
 }
+.demo{/*举例样式*/
+	color: #777;
+	border: 1px dashed #666;
+	padding: 12px;
+	margin: 10px 0;
+	font-size: 14px;
+}
+.demo p{
+	margin: 0;
+}
+.demo ul{
+	margin: 0;
+}
+.file{
+	border: 1px solid #aaa;
+}
+button{
+	margin: 10px 0;
+}
 
 .hide{
 	display: none;
@@ -156,13 +176,13 @@ aside{
 }
 
 .font_light{
-	color: #fff;   /* 浅色文字 */
+	color: #fff;/* 浅色文字 */
 }
 .font_hide{
-	color: #1d953c;   /* 伪隐藏文字，与背景色相同 */
+	opacity: 0;/* 伪隐藏文字，透明度为零 */
 }
 .a_light{
-	color: #a6ce3a;   /* 浅色a标签 */
+	color: #a6ce3a;/* 浅色a标签 */
 }
 
 /****************************************
