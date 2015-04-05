@@ -1,6 +1,8 @@
 xueyi1230.github.io
 ===================
 
-<p>削一个博客</p>
-<p>一个简陋的个人博客，正在逐步完善中</p>
-<p>A sample blog is improving</p>
+[削一个博客](http://xueyi1230.github.io)
+
+一个简陋的个人博客，正在逐步完善中
+
+A sample blog is improving
