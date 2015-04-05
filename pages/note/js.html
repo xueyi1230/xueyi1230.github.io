@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="keywords" content="前端 JavaScript js 学习笔记">
+	<meta name="description" content="JavaScript学习笔记">
+	<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVFhHzZeBbQIxDEVvha7ACqzQFViBFVihK3SFrtAVugIrsAL4o37JtZy7n8Qn+qQnhDhskjhOWP4D9wnPpufbzJ7LTPkxs4e9F1OF8T6e7wSOZkwYvZkHcwvGkpMTfCEmjX6ZW1x/7ebNxBezxN53swUHgVkY4mTGhNHW6PDD8HlPraRgmmPSaEzC2UPxTYNCQ8FliWksyE9TLVIJjDBL7GVBctnwWorSG5AUI1d2RzdKb4BYe9TALii9Aeu/GxW9YZqZ3lDGSG8oRekNsKwPZPT0hnLUYoTlDQlgqyG4MgvlfYG7gBcM/pg1uy8jLVh8fpthdEpBDt8JPNx+MZiyFLioTsEkrf2tHFbx9iyDqUeAtQuGclhhqYYKkqPbWsddDisGbU29p/yw4rT23O3KDis/mt7jVflrtjqjSO6D9B4qLNo1UZB/4mYPtczg/4BRX8myPADtZ1yhbGvycAAAAABJRU5ErkJggg==">
+	<link rel="apple-touch-icon" href="../../images/logo.png">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/common.css">
+
+	<title>JavaScript学习笔记</title>
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header_wrap" class="outer font_light">
+
+	<header class="inner one_column_width">
+		<a id="forkme_banner" href="../../index.html">Index</a>
+		<h1 id="project_title">JavaScript学习笔记</h1>
+	</header>
+
+</div>
+
+<!-- Content -->
+<div id="main_content_wrap" class="outer">
+	<section id="main_content" class="inner one_column_width">
+		<h2>2015去哪儿网春招前端笔试题</h2>
+		答案我还没来得及整理，最后一道瓶颈了（认真脸），总之上题目先！
+		<hr>
+		编程题3道，开发岗全部必答，其他岗前2道（1和2）必答；前端题2道，前端必答（3和4）。
+		<ol>
+			<li>请实现一下函数int indexOf(int[]array,int target)，给定一个循环有序的数组，请在这个数组中找到指定元素，找到的话返回下标，没有找到返回-1。<br>
+				该数组的特点是它是一个单调递增的数组向右循环移位形成的。举例说明，原数组是[4,8,13,20,23,34,41,52]经过向右循环移位后形成的数组可能是[23,34,41,52,4,8,13,20]，也可能是[4,8,13,20,23,34,41,52]</li>
+			<li>请实现以下函数String decode(String str)，该函数功能是解密一个给定字符串，解密的规则是将两个数字间（前面没有数字的情况下算开头和数字间）的字符串重复数字次数，数字不会超过int表示的范围，比如a2bc3d1，解密后字符串是aabcbcbcd</li>
+
+			<li>输入一个文件名，输出它相应的后缀名，如输入abc.txt，则输出txt</li>
+			<li>
+				给定一个数组，用JS递归的方法输出HTML，具体例子记不清了，大概这样：
+				<table>
+					<tr>
+						<th>数组</th>
+						<th>HTML</th>
+						<th>输出</th>
+					</tr>
+					<tr>
+						<td class="code">
+							<p>var item = [{</p>
+							<p style="text-indent: 1em;">"name":'a',</p>
+							<p style="text-indent: 1em;">"age":100, </p>
+							<p style="text-indent: 1em;">"child":[{</p>
+							<p style="text-indent: 2em;">"name":'b0',</p>
+							<p style="text-indent: 2em;">"age":70,</p>
+							<p style="text-indent: 2em;">"child":[{</p>
+							<p style="text-indent: 4em;">"name":'c',</p>
+							<p style="text-indent: 4em;">"age":50</p>
+							<p style="text-indent: 3em;">}]</p>
+							<p style="text-indent: 2em;">},{</p>
+							<p style="text-indent: 2em;"> "name":'b1',</p>
+							<p style="text-indent: 2em;">"age":65,</p>
+							<p style="text-indent: 2em;">"child":[{</p>
+							<p style="text-indent: 3em;">"name":'c',</p>
+							<p style="text-indent: 3em;">"age":40,</p>
+							<p style="text-indent: 3em;">"child":[{</p>
+							<p style="text-indent: 4em;">"name":'d',</p>
+							<p style="text-indent: 4em;">"age":20</p>
+							<p style="text-indent: 3em;">}]</p>
+							<p style="text-indent: 2em;">}]</p>
+							<p style="text-indent: 1em;">}]</p>
+							<p>}]</p>
+						</td>
+						<td class="code">
+							<p>&lt;ol&gt;</p>
+							<p style="text-indent: 2em;">&lt;li&gt;name:a&lt;/li&gt;</p>
+							<p style="text-indent: 2em;">&lt;li&gt;age:100&lt;/li&gt;</p>
+							<p style="text-indent: 2em;">&lt;li&gt;child:</p>
+							<p style="text-indent: 4em;">&lt;ol&gt;</p>
+							<p style="text-indent: 6em;">&lt;li&gt;name:b0&lt;/li&gt;</p>
+							<p style="text-indent: 6em;">&lt;li&gt;age:70&lt;/li&gt;</p>
+							<p style="text-indent: 6em;">&lt;li&gt;child:</p>
+							<p style="text-indent: 8em;">&lt;ol&gt;</p>
+							<p style="text-indent: 10em;">&lt;li&gt;name:c&lt;/li&gt;</p>
+							<p style="text-indent: 10em;">&lt;li&gt;age:50&lt;/li&gt;</p>
+							<p style="text-indent: 8em;">&lt;/ol&gt;</p>
+							<p style="text-indent: 6em;">&lt;/li&gt;</p>
+							<p style="text-indent: 4em;">&lt;/ol&gt;</p>
+							<p style="text-indent: 4em;">&lt;ol&gt;</p>
+							<p style="text-indent: 6em;">&lt;li&gt;name:b1&lt;/li&gt;</p>
+							<p style="text-indent: 6em;">&lt;li&gt;age:65&lt;/li&gt;</p>
+							<p style="text-indent: 6em;">&lt;li&gt;child:</p>
+							<p style="text-indent: 8em;">&lt;ol&gt;</p>
+							<p style="text-indent: 10em;">&lt;li&gt;name:c&lt;/li&gt;</p>
+							<p style="text-indent: 10em;">&lt;li&gt;age:40&lt;/li&gt;</p>
+							<p style="text-indent: 10em;">&lt;li&gt;child:</p>
+							<p style="text-indent: 12em;">&lt;ol&gt;</p>
+							<p style="text-indent: 14em;">&lt;li&gt;name:d&lt;/li&gt;</p>
+							<p style="text-indent: 14em;">&lt;li&gt;age:20&lt;/li&gt;</p>
+							<p style="text-indent: 12em;">&lt;/ol&gt;</p>
+							<p style="text-indent: 10em;">&lt;/li&gt;</p>
+							<p style="text-indent: 8em;">&lt;/ol&gt;</p>
+							<p style="text-indent: 6em;">&lt;/li&gt;</p>
+							<p style="text-indent: 4em;">&lt;/ol&gt;</p>
+							<p style="text-indent: 2em;">&lt;/li&gt;</p>
+							<p>&lt;/ol&gt;</p>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</li>
+		</ol>
+		题目参考：<a href="http://www.bkjia.com/ASPjc/972884.html">[历年IT笔试题]2015年去哪网实习笔试题，it2015年</a>
+
+		<div id="gotop" class="hide">Go Top</div>
+	</section>
+</div>
+
+<!-- Footer  -->
+<div id="footer_wrap" class="outer font_light">
+	<footer class="inner one_column_width">
+		<p>© xueyi | Published with <a href="http://pages.github.com" class="a_light">GitHub Pages</a></p>
+	</footer>
+</div>
+
+<!-- Script  -->
+<script data-main="../../javascripts/common" src="../../javascripts/base/require.js"></script>
+
+</body>
+</html>

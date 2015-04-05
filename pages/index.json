@@ -18,6 +18,11 @@
 			"list"  : [".html与.htm的区别","两种在客户端存储数据的方法","HTML5语义元素","Canvas和SVG"]
 		},
 		{
+			"cId"   : "js",
+			"cName" : "JavaScript",
+			"list"  : ["2015去哪儿网春招前端笔试题"]
+		},
+		{
 			"cId"   : "smarty",
 			"cName" : "Smarty",
 			"list"  : ["参考资料"]
