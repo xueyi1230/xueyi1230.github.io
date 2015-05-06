@@ -8,7 +8,7 @@
 	<meta name="description" content="JavaScript学习笔记">
 	<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVFhHzZeBbQIxDEVvha7ACqzQFViBFVihK3SFrtAVugIrsAL4o37JtZy7n8Qn+qQnhDhskjhOWP4D9wnPpufbzJ7LTPkxs4e9F1OF8T6e7wSOZkwYvZkHcwvGkpMTfCEmjX6ZW1x/7ebNxBezxN53swUHgVkY4mTGhNHW6PDD8HlPraRgmmPSaEzC2UPxTYNCQ8FliWksyE9TLVIJjDBL7GVBctnwWorSG5AUI1d2RzdKb4BYe9TALii9Aeu/GxW9YZqZ3lDGSG8oRekNsKwPZPT0hnLUYoTlDQlgqyG4MgvlfYG7gBcM/pg1uy8jLVh8fpthdEpBDt8JPNx+MZiyFLioTsEkrf2tHFbx9iyDqUeAtQuGclhhqYYKkqPbWsddDisGbU29p/yw4rT23O3KDis/mt7jVflrtjqjSO6D9B4qLNo1UZB/4mYPtczg/4BRX8myPADtZ1yhbGvycAAAAABJRU5ErkJggg==">
 	<link rel="apple-touch-icon" href="../../images/logo.png">
-	<link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/common.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/commonex.css">
 
 	<title>JavaScript学习笔记</title>
 </head>
@@ -19,7 +19,7 @@
 <div id="header_wrap" class="outer font_light">
 
 	<header class="inner one_column_width">
-		<a id="forkme_banner" href="../../index.html">Index</a>
+		<a id="forkme_banner" href="../../indexex.html">Index</a>
 		<h1 id="project_title">JavaScript学习笔记</h1>
 	</header>
 
@@ -29,15 +29,24 @@
 <div id="main_content_wrap" class="outer">
 	<section id="main_content" class="inner one_column_width">
 		<h2>2015去哪儿网春招前端笔试题</h2>
-		答案我还没来得及整理，最后一道瓶颈了（认真脸），总之上题目先！
+		<a href="https://github.com/xueyi1230/xueyi1230.github.io/blob/master/pages/note/js.html">点我查看源代码</a>
 		<hr>
 		编程题3道，开发岗全部必答，其他岗前2道（1和2）必答；前端题2道，前端必答（3和4）。
 		<ol>
-			<li>请实现一下函数int indexOf(int[]array,int target)，给定一个循环有序的数组，请在这个数组中找到指定元素，找到的话返回下标，没有找到返回-1。<br>
-				该数组的特点是它是一个单调递增的数组向右循环移位形成的。举例说明，原数组是[4,8,13,20,23,34,41,52]经过向右循环移位后形成的数组可能是[23,34,41,52,4,8,13,20]，也可能是[4,8,13,20,23,34,41,52]</li>
-			<li>请实现以下函数String decode(String str)，该函数功能是解密一个给定字符串，解密的规则是将两个数字间（前面没有数字的情况下算开头和数字间）的字符串重复数字次数，数字不会超过int表示的范围，比如a2bc3d1，解密后字符串是aabcbcbcd</li>
+			<li>
+				请实现一下函数int indexOf(int[]array,int target)，给定一个循环有序的数组，请在这个数组中找到指定元素，找到的话返回下标，没有找到返回-1。<br>
+				该数组的特点是它是一个单调递增的数组向右循环移位形成的。举例说明，原数组是[4,8,13,20,23,34,41,52]经过向右循环移位后形成的数组可能是[23,34,41,52,4,8,13,20]，也可能是[4,8,13,20,23,34,41,52]<hr>
+				<p>思路：JS有自己的indexOf方法。这里我用最简单的<strong>for循环</strong>遍历显示。</p>
+			</li>
+			<li>
+				请实现以下函数String decode(String str)，该函数功能是解密一个给定字符串，解密的规则是将两个数字间（前面没有数字的情况下算开头和数字间）的字符串重复数字次数，数字不会超过int表示的范围，比如a2bc3d1，解密后字符串是aabcbcbcd<hr>
+				<p>思路：使用<strong>match方法</strong>通过<strong>正则表达式</strong>获得数字，并根据数字将字符串<strong>split方法</strong>分割成子串。</p>
+			</li>
 
-			<li>输入一个文件名，输出它相应的后缀名，如输入abc.txt，则输出txt</li>
+			<li>
+				输入一个文件名，输出它相应的后缀名，如输入abc.txt，则输出txt<hr>
+				<p>思路：使用<strong>lastIndexOf方法</strong>获得最后一个"."的下标，如果文件名不合法则警告框提示</p>
+			</li>
 			<li>
 				给定一个数组，用JS递归的方法输出HTML，具体例子记不清了，大概这样：
 				<table>
@@ -49,27 +58,27 @@
 					<tr>
 						<td class="code">
 							<p>var item = [{</p>
-							<p style="text-indent: 1em;">"name":'a',</p>
-							<p style="text-indent: 1em;">"age":100, </p>
-							<p style="text-indent: 1em;">"child":[{</p>
-							<p style="text-indent: 2em;">"name":'b0',</p>
-							<p style="text-indent: 2em;">"age":70,</p>
-							<p style="text-indent: 2em;">"child":[{</p>
-							<p style="text-indent: 4em;">"name":'c',</p>
-							<p style="text-indent: 4em;">"age":50</p>
+							<p style="text-indent: 1.5em;">"name": 'a',</p>
+							<p style="text-indent: 1.5em;">"age": 100, </p>
+							<p style="text-indent: 1.5em;">"child": [{</p>
+							<p style="text-indent: 3em;">"name": 'b0',</p>
+							<p style="text-indent: 3em;">"age": 70,</p>
+							<p style="text-indent: 3em;">"child": [{</p>
+							<p style="text-indent: 6em;">"name": 'c',</p>
+							<p style="text-indent: 6em;">"age": 50</p>
 							<p style="text-indent: 3em;">}]</p>
-							<p style="text-indent: 2em;">},{</p>
-							<p style="text-indent: 2em;"> "name":'b1',</p>
-							<p style="text-indent: 2em;">"age":65,</p>
-							<p style="text-indent: 2em;">"child":[{</p>
-							<p style="text-indent: 3em;">"name":'c',</p>
-							<p style="text-indent: 3em;">"age":40,</p>
-							<p style="text-indent: 3em;">"child":[{</p>
-							<p style="text-indent: 4em;">"name":'d',</p>
-							<p style="text-indent: 4em;">"age":20</p>
+							<p style="text-indent: 1.5em;">}, {</p>
+							<p style="text-indent: 3em;"> "name": 'b1',</p>
+							<p style="text-indent: 3em;">"age": 65,</p>
+							<p style="text-indent: 3em;">"child": [{</p>
+							<p style="text-indent: 4.5em;">"name": 'c',</p>
+							<p style="text-indent: 4.5em;">"age": 40,</p>
+							<p style="text-indent: 4.5em;">"child": [{</p>
+							<p style="text-indent: 6em;">"name": 'd',</p>
+							<p style="text-indent: 6em;">"age": 20</p>
+							<p style="text-indent: 4.5em;">}]</p>
 							<p style="text-indent: 3em;">}]</p>
-							<p style="text-indent: 2em;">}]</p>
-							<p style="text-indent: 1em;">}]</p>
+							<p style="text-indent: 1.5em;">}]</p>
 							<p>}]</p>
 						</td>
 						<td class="code">
@@ -106,9 +115,11 @@
 							<p style="text-indent: 2em;">&lt;/li&gt;</p>
 							<p>&lt;/ol&gt;</p>
 						</td>
-						<td></td>
+						<td id="resultForth"></td>
 					</tr>
 				</table>
+				<hr>
+				<p>思路：递归输出，我的方法是根据属性值是否为“child”选择不同的输出，随时<strong>document.write</strong>输出结果；小伙伴的方法是根据属性值是否为数组，<strong>instanceof Array</strong>选择不同输出，拼接成字符串后统一输出。</p>
 			</li>
 		</ol>
 		题目参考：<a href="http://www.bkjia.com/ASPjc/972884.html" target="_blank">[历年IT笔试题]2015年去哪网实习笔试题，it2015年</a>
@@ -126,6 +137,99 @@
 
 <!-- Script  -->
 <script data-main="../../javascripts/common" src="../../javascripts/base/require.js"></script>
+<script type="text/javascript">
+	/*
+	 请实现一下函数int indexOf(int[]array,int target)，给定一个循环有序的数组，请在这个数组中找到指定元素，找到的话返回下标，没有找到返回-1。
+	 该数组的特点是它是一个单调递增的数组向右循环移位形成的。举例说明，原数组是[4,8,13,20,23,34,41,52]经过向右循环移位后形成的数组可能是[23,34,41,52,4,8,13,20]，也可能是[4,8,13,20,23,34,41,52]
+	 */
+	function indexOf(arr,target){
+		var result = -1;
+		//var result = arr.indexOf(target);
+		var len = arr.length;
+		for(var i=1 ; i<len ; i++){
+			if(arr[i] === target){
+				result=i;
+			}
+		}
+		document.write(result);
+	}
+
+	/*
+	 请实现以下函数String decode(String str)，该函数功能是解密一个给定字符串，解密的规则是将两个数字间（前面没有数字的情况下算开头和数字间）的字符串重复数字次数，数字不会超过int表示的范围，比如a2bc3d1，解密后字符串是aabcbcbcd
+	 */
+	function decode(str){
+		//声明一个数的正则表达式
+		var reg = new RegExp(/\d*\d/g),
+		//按数将原字符串分割为多个子串
+				substr = str.split(reg),
+		//获取数（字）
+				num = str.match(reg),
+				len = num.length,
+				result = '';
+		for(var i=0 ; i<len ;i++){
+			var count = num[i];
+			for(var j=0 ; j<num[i] ;j++){
+				result += substr[i];
+			}
+		}
+		document.body.innerHTML = result;
+	}
+
+	/*
+	 输入一个文件名，输出它相应的后缀名，如输入abc.txt，则输出txt
+	 */
+	/*使用遍历*/
+	function suffix(str){
+		var i = str.lastIndexOf('.');
+		//如果没有：关键字||后缀名||文件名，则弹出提示框
+		i <= 0 || i==str.length-1 ? alert('无效文件名') : document.write(str.slice(i+1));
+	}
+	/*使用正则*/
+
+	/* 递归输出 */
+	var item = [{
+		"name": 'a',
+		"age": 100,
+		"child": [{
+			"name": 'b0',
+			"age": 70,
+			"child": [{
+				"name": 'c',
+				"age": 50
+			}]
+		}, {
+			"name": 'b1',
+			"age": 65,
+			"child": [{
+				"name": 'c',
+				"age": 40,
+				"child": [{
+					"name": 'd',
+					"age": 20
+				}]
+			}]
+		}]
+	}]
+
+	function writeItem(arr){
+		var len = arr.length;
+		for (var i=0 ; i<len ; i++){
+			document.write('<ol>');
+			for(key in arr[i]){
+				if(key == 'child'){
+					document.write('<li>'+ 'child:');
+					writeItem(arr[i][key]);
+					document.write('</li>');
+				}
+				else{
+					document.write('<li>'+ key + ':' + arr[i][key] + '</li>');
+				}
+			}
+			document.write('</ol>');
+		}
+	}
+
+</script>
 
 </body>
 </html>

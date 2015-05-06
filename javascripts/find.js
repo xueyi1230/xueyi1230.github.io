@@ -13,7 +13,12 @@ require(['jquery','goTop'],function($){
 		console.log('早上好，中午好，晚上好，感谢您阅读我的简历：）');
 	}
 
-	$("h4").click(function(){
-		$(this).next("ul").slideToggle(700);
+	$(".article-title").click(function(){
+		if($(this).children("i").hasClass("icon-close")){
+			$(this).children("i").removeClass("icon-close").addClass("icon-open");
+		}else{
+			$(this).children("i").removeClass("icon-open").addClass("icon-close");
+		}
+		$(this).next("div").slideToggle(500);
 	});
 });
