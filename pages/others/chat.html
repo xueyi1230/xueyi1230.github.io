@@ -1,54 +1,68 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 
-	<head>
-		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<meta name="keywords" content="Node.js Socket.IO CryptoJS WebSocket 加密 聊天室">
-		<meta name="description" content="使用Node.js+Socket.IO+CryptoJS搭建WebSocket实时加密聊天室">
-		<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVFhHzZeBbQIxDEVvha7ACqzQFViBFVihK3SFrtAVugIrsAL4o37JtZy7n8Qn+qQnhDhskjhOWP4D9wnPpufbzJ7LTPkxs4e9F1OF8T6e7wSOZkwYvZkHcwvGkpMTfCEmjX6ZW1x/7ebNxBezxN53swUHgVkY4mTGhNHW6PDD8HlPraRgmmPSaEzC2UPxTYNCQ8FliWksyE9TLVIJjDBL7GVBctnwWorSG5AUI1d2RzdKb4BYe9TALii9Aeu/GxW9YZqZ3lDGSG8oRekNsKwPZPT0hnLUYoTlDQlgqyG4MgvlfYG7gBcM/pg1uy8jLVh8fpthdEpBDt8JPNx+MZiyFLioTsEkrf2tHFbx9iyDqUeAtQuGclhhqYYKkqPbWsddDisGbU29p/yw4rT23O3KDis/mt7jVflrtjqjSO6D9B4qLNo1UZB/4mYPtczg/4BRX8myPADtZ1yhbGvycAAAAABJRU5ErkJggg==">
-		<link rel="apple-touch-icon" href="../../images/logo.png">
-		<link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/commonex.css">
+<html class="no-js" lang="en">
 
-		<title>WebSocket实时加密聊天室</title>
-	</head>
+<head>
 
-	<body>
+  <meta charset="utf-8">
 
-	<!-- Header -->
-	<div id="header_wrap" class="outer font_light">
+  <title>跳转页
 
-		<header class="inner one_column_width">
-			<a id="forkme_banner" href="../../indexex.html">Index</a>
-			<h1 id="project_title">WebSocket实时加密聊天室</h1>
-			<h2 id="project_tagline">2015/01/26</h2>
-		</header>
+  </title>
 
-	</div>
+</head>
 
-	<!-- Content -->
-	<div id="main_content_wrap" class="outer">
-		<section id="main_content" class="inner one_column_width">
-			<strong>非原创</strong>
-			<p>//TODO浏览器滚动条始终保持在最底部方法修正</p>
-			<p>代码：<a href="https://github.com/xueyi1230/chat" target="_blank">github.com/xueyi1230/chat</a></p>
-			<p>原文：<a href="http://www.plhwin.com/2014/05/28/nodejs-socketio/" target="_blank">使用Node.js+Socket.IO搭建WebSocket实时应用</a></p>
-			<p>加密：<a href="http://my.oschina.net/jack230230/blog/69826" target="_blank">JavaScript加密库Crypto-JS的使用</a></p>
-			<p>JS加密库CryptoJS：<a href="https://code.google.com/p/crypto-js/" target="_blank">code.google.com/p/crypto-js/</a></p>
-			<p>网络信息安全课程设计<br>
-				2015/01/19-2015/01/23<br>
-				使用Node.js+Socket.IO搭建WebSocket实时聊天室，在聊天室的基础上对客户端-服务器，服务器-客户端过程中进行加密（未认证）。</p>
-			<p>实验室没有网，基本上只能在晚上回宿舍之后做，五天时间没能读透源程序，也没写认证证书的分发，一个简陋的加密实验。</p>
-			<p>以上。</p>
-		</section>
-	</div>
+<body>
 
-	<!-- Footer  -->
-	<div id="footer_wrap" class="outer font_light">
-		<footer class="inner one_column_width">
-			<p>© xueyi | Published with <a href="http://pages.github.com" class="a_light">GitHub Pages</a></p>
-		</footer>
-	</div>
+<script language="javascript">
 
-	</body>
+
+
+var ua = navigator.userAgent.toLowerCase(),
+
+	isIos = ua.match('os') ? 1 : 0,
+
+	timeout;
+
+
+
+function openAppStore() {
+
+	window.location='https://itunes.apple.com/cn/app/zai-xing-xing-jia-wei-ni-chu/id964410886?l=en&amp;mt=8';
+
+}
+
+
+
+function openApp() {
+
+	window.location = 'newsapp://doc/8A7OMFOJ00014JB6';
+
+	window.setTimeout(openAppStore,500);
+
+}
+
+
+
+if (isIos) {
+
+	openApp();
+
+}
+
+else {
+
+	alert('我不是苹果设备');
+
+}
+
+
+
+</script>
+
+</body>
+
 </html>
+
+
+
