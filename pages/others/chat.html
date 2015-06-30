@@ -18,11 +18,15 @@
 
 
 
-var ua = navigator.userAgent.toLowerCase(),
+//location.href简单
 
-	isIos = ua.match('os') ? 1 : 0,
 
-	timeout;
+
+// var ua = navigator.userAgent.toLowerCase(),
+
+// 	isIos = ua.match('os') ? 1 : 0,
+
+// 	timeout;
 
 
 
@@ -34,29 +38,47 @@ function openAppStore() {
 
 
 
-function openApp() {
+// function openApp() {
 
-	window.location = 'newsapp://';
+// 	window.location = 'newsapp://';
 
-	window.setTimeout(openAppStore,500);
+// 	window.setTimeout(openAppStore, 500);
 
-}
+// }
 
 
 
-if (isIos) {
+// if (isIos) {
 
-	openApp();
+// 	openApp();
 
-}
+// }
 
-else {
+// else {
 
-	openApp();
+// 	alert('我不是苹果设备');
 
-	//alert('我不是苹果设备');
+// }
 
-}
+
+
+//iframe
+
+var ifr = documnet.createElement('iframe');
+
+ifr.src = 'newsapp://';
+
+ifr.style.display = 'none';
+
+document.body.appendChild(ifr);
+
+window.setTimeout(function() {
+
+	document.body.removeChild(ifr);
+
+}, 500);
+
+openAppStore();
 
 
 
