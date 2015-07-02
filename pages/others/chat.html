@@ -62,7 +62,9 @@ function openApp() {
 
 	var ifr = document.createElement('iframe');
 
-	ifr.src = 'Mentor://';
+	ifr.src = 'weixin://';
+
+	//ifr.src = 'Mentor://';
 
 	ifr.style.display = 'none';
 
@@ -78,7 +80,7 @@ function openApp() {
 
 	}, 500);
 
-	
+
 
 	if (isIos) {
 
@@ -96,10 +98,17 @@ function openApp() {
 
 }
 
+
+
 openApp();
+
+
 
 </script>
 
 </body>
 
 </html>
+
+
+
