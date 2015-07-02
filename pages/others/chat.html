@@ -16,27 +16,35 @@
 
 <script language="javascript">
 
+var ua = navigator.userAgent.toLowerCase(),
 
+	isIos = ua.match('os') ? 1 : 0,
 
-//location.href简单
+	downloadHref = {
 
+		ios: 'itms://itunes.apple.com/cn/app/zai-xing-xing-jia-wei-ni-chu/id964410886?l=en&amp;mt=8',
 
+		android: 'http://a.app.qq.com/o/simple.jsp?pkgname=com.guokr.mentor&from=singlemessage&isappinstalled=0'
 
-// var ua = navigator.userAgent.toLowerCase(),
-
-// 	isIos = ua.match('os') ? 1 : 0,
-
-// 	timeout;
+	};
 
 
 
 function openAppStore() {
 
-	window.location='itms://itunes.apple.com/cn/app/zai-xing-xing-jia-wei-ni-chu/id964410886?l=en&amp;mt=8';
+	window.location = downloadHref.ios;
+
+}
+
+function openDownloadPage() {
+
+	window.location=downloadHref.android;
 
 }
 
 
+
+//location.href简单，但若用户未安装app，会直接跳到报错页面
 
 // function openApp() {
 
@@ -48,37 +56,45 @@ function openAppStore() {
 
 
 
-// if (isIos) {
-
-// 	openApp();
-
-// }
-
-// else {
-
-// 	alert('我不是苹果设备');
-
-// }
-
-
-
 //iframe
 
-var ifr = document.createElement('iframe');
+function openApp() {
 
-ifr.src = 'newsapp://';
+	var ifr = document.createElement('iframe');
 
-ifr.style.display = 'none';
+	ifr.src = 'Mentor://';
 
-document.body.appendChild(ifr);
+	ifr.style.display = 'none';
 
-window.setTimeout(function() {
 
-	document.body.removeChild(ifr);
 
-}, 500);
+	document.body.appendChild(ifr);
 
-openAppStore();
+
+
+	window.setTimeout(function() {
+
+		document.body.removeChild(ifr);
+
+	}, 500);
+
+	
+
+	if (isIos) {
+
+		openAppStore();
+
+	}
+
+	else {
+
+		//alert('我不是苹果设备');
+
+		openDownloadPage();
+
+	}
+
+}
 
 
 
@@ -87,6 +103,3 @@ openAppStore();
 </body>
 
 </html>
-
-
-
