@@ -60,13 +60,7 @@ function openDownloadPage() {
 
 function openApp() {
 
-
-
-window.location = 'weixin://';
-
-
-
-	/*var ifr = document.createElement('iframe');
+	var ifr = document.createElement('iframe');
 
 	ifr.src = 'weixin://';
 
@@ -84,23 +78,25 @@ window.location = 'weixin://';
 
 		document.body.removeChild(ifr);
 
+		if (isIos) {
+
+			openAppStore();
+
+		}
+
+		else {
+
+			//alert('我不是苹果设备');
+
+			openDownloadPage();
+
+		}
+
 	}, 500);
 
 
 
-	if (isIos) {
-
-		openAppStore();
-
-	}
-
-	else {
-
-		//alert('我不是苹果设备');
-
-		openDownloadPage();
-
-	}*/
+	
 
 }
 
