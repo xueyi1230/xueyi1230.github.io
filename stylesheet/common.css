@@ -83,8 +83,8 @@ a:hover,a:focus{
 *****************************************/
 
 .wrap {
-	min-width: 1230px;
-	_width: expression(((this.width||document.documentElement.clientWidth||document.documentElement.offsettWidth)<1230)?"1230px":"auto");
+	/*min-width: 1230px;
+	_width: expression(((this.width||document.documentElement.clientWidth||document.documentElement.offsettWidth)<1230)?"1230px":"auto");*/
 }
 .side {
 	float: left;
@@ -205,8 +205,8 @@ a:hover,a:focus{
 	#zoom: 1;
 }
 .auto-height {
-	padding-bottom: 10000px;
-	margin-bottom: -10000px;
+	padding-bottom: 100000px;
+	margin-bottom: -100000px;
 	overflow: hidden;
 }
 .hide {
