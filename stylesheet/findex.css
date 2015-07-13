@@ -3,7 +3,7 @@ ol,ul{
 	padding: 0;
 }
 .head_photo{
-	background: #1d953c url('../images/intro_photo.jpg');
+	background: #1d953c url('../image/intro_photo.jpg');
 	background-size: cover;
 	width: 200px;
 	height: 200px;

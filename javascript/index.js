@@ -10,7 +10,7 @@ require.config({
 
 require(['jquery','baiduTemplate','goTop','hello'],function($){
 	$.ajax({
-		url :"pages/index.json",
+		url :"page/index.json",
 		success : function(data){
 			var index = baidu.template('tpl',data);
 			$("#main_content").html(index).children().show(1000);
