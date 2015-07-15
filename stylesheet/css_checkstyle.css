@@ -1,0 +1,13 @@
+.demo-appearance {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+/* 临时样式 */
+.indent1 {
+    padding-left: 24px;
+}
+.indent2 {
+    padding-left: 48px;
+}

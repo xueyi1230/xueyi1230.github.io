@@ -4,7 +4,8 @@
 html,body,
 ol,ul,
 table,caption,tbody,tfoot,thead,tr,th,td,
-article,canvas,footer,header,section,aside{
+article,canvas,footer,header,section,aside,
+hr {
 	margin: 0;
 	padding: 0;
 }
@@ -102,7 +103,6 @@ a:hover,a:focus{
 	background: linear-gradient(150deg,#67aa37,#1d953c);/*W3C与加前缀的角度计算方式相反*/
 }
 .nav {
-	border-top: 1px dashed #fff;
 	padding: 10px 0;
 }
 .nav ul ul {
@@ -140,10 +140,10 @@ a:hover,a:focus{
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 }
-/*.article-list {
-	margin: 60px 40px;
-}*/
-.article-list li {
+.content {
+	margin: 0 0 20px;
+}
+.content>li {
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -184,6 +184,11 @@ a:hover,a:focus{
 	font-size: 12px;
 }
 
+/* page页 */
+.part {
+	border-top: 1px solid #ccc;
+	padding: 10px 0 10px 20px;
+}
 
 /****************************************
 移动设备
@@ -239,4 +244,9 @@ a:hover,a:focus{
 .tag-wrap {
 	border: 1px dashed #fff;
 	padding: 10px 15px;
+}
+
+.hr-devide {
+	border: none;
+	border-top: 1px dashed #fff;
 }

@@ -17,13 +17,98 @@
 <div class="wrap clear-fix">
     <div class="main">
         <div class="main-content">
-            <a id="home-icon" href="https://github.com/xueyi1230">GitHub</a>
-            <div class="content">
-                <ul>
-                    <li>1、结构：用label绑定input，推荐使用label包裹input；</li>
-                    <li>2、样式：隐藏input标签，为label添加背景或使用其他小标签（&lt;i&gt;&lt;/i&gt;）做出选框的样式；</li>
-                    <li>3、切换：选框样式的切换可以通过:checked伪元素来实现，但是IE8以下不支持:checked伪元素，可以通过JS来控制。</li>
-                </ul>
+            <a id="home-icon" href="../../index.html">Index</a>
+            <div class="content clear-fix">
+                <h4>实现</h4>
+                <div class="part">
+                    <p>1、结构：用label绑定input，推荐使用label包裹input，以减少不必要的id；</p>
+                    <p>2、样式：隐藏input标签，为label添加背景或使用其他小标签（&lt;i&gt;&lt;/i&gt;）做出选框的样式；</p>
+                    <p class="indent1">隐藏input标签的方式有很多种：</p>
+                    <ul class="indent2">
+                        <li>
+                            1) display
+                            <pre>display：none；</pre>
+                        </li>
+                        <li>
+                            2) visibility
+                            <pre>visibility: hidden;</pre>
+                        </li>
+                        <li>
+                            3) 透明度
+                            <pre>
+input[type=checkbox] {
+    position: absolute;
+    /* for IE */
+    filter:alpha(opacity=0);
+    /* CSS3 standard */
+    opacity:0;
+    width: 18px;
+    height: 18px;
+}</pre>
+                        </li>
+                        <li>
+                            4) width
+                            <pre>
+input[type=checkbox] {
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 18px;
+}</pre>
+                        </li>
+                        <li>……</li>
+                    </ul>
+                    <p class="indent1">做出样式的方法有很多种：</p>
+                    <ul class="indent2">
+                        <li>1) 为label添加背景图片；</li>
+                        <li>2) :before；</li>
+                        <li>3) 简单的样式可以通过添加元素，使用CSS实现。</li>
+                    </ul>
+                    <p class="indent1">同时搭配transition、transform等属性实现简单的动画效果。</p>
+                    <p>3、切换：选框样式的切换可以通过 :checked 伪元素来实现(IE8+)，
+                        针对IE8以下浏览器可以通过JS来控制。</p>
+                    <p>demo: <a href="http://xiumu-blog.stor.sinaapp.com/blog-uploads/2014/08/checkbox-demo.html" target="_blank">纯CSS实现</a>
+                    </p>
+                </div>
+
+                <h4>更炫的效果</h4>
+                <div class="part">
+                    <p>用SVG实现动画效果：<a href="http://tympanus.net/Development/AnimatedCheckboxes" target="_blank">Animated Checkboxes and Radio Buttons with SVG</a></p>
+                    <p>一个SVG动画的js库：<a href="http://raphaeljs.com/" target="_blank">Raphael</a>可以兼容到IE6</p>
+                </div>
+
+                <h4>相关属性</h4>
+                <div class="part">
+                    <p>Chrome浏览器，默认的checkbox样式如下：</p>
+                    <img src="../../image/pages/css_checksytle/chromecheckbox.png">
+                    <p>1、box-sizing (-moz-box-sizing)</p>
+                    <p class="indent1">以某种特定的方式显示元素，会改变盒模型中元素高宽的计算方式</p>
+                    <p class="indent1">值：
+                        <ul class="indent2">
+                            <li>默认值content-box，给定的元素宽高为content的宽高，内边距、边框和外边距会以此为基础扩大；</li>
+                            <li>border-box你定的宽高就是元素的宽高，内边距和边框会挤压内容区，外边距会以此为基础扩大；</li>
+                            <li>padding-box。</li>
+                        </ul>
+                    </p>
+                    <p class="indent1">兼容性：IE8+</p>
+                    <p class="indent1">是一个还在实验中的<a href="http://www.w3school.com.cn/css3/css3_user_interface.asp" target="_blank">用户界面属性</a>。</p>
+                    <a class="indent1" href="http://www.w3school.com.cn/tiy/t.asp?f=css3_box-sizing" target="_blank">一个W3School实例</a>
+                    <p class="indent1">IE8的checkbox默认box-sizing为content-box;</p>
+                    <p class="indent1">Chrome的checkbox默认box-sizing为border-box</p>
+                    <a class="indent1" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing" target="_blank">MDN相关说明</a>
+
+                    <p class="demo-appearance">2、appearance (-moz-appearance / -webkit-appearance)</p>
+                    <p class="indent1">用来实现或者伪装成某些特殊的元素（比如button/checkbox等等）</p>
+                    <p class="indent1">兼容性：非标准属性，仅Firefox、Safari和Chrome支持，并且在不同浏览器上的表现差异较大</p>
+                    <a class="indent1" href="https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance" target="_blank">MDN相关说明</a>
+                </div>
+
+                <h4>相关阅读</h4>
+                <div class="part">
+                    <a href="http://www.zhangxinxu.com/wordpress/?p=466" target="_blank">checkbox复选框的一些深入研究与理解</a>
+                    <br>
+                    09年的文章，与其说是内容本身，不如说是研究的思路更值得（喜欢转牛角尖的人）学习参考
+                </div>
             </div>
 
             <div id="footer">
@@ -35,9 +120,13 @@
     </div>
     <div class="side auto-height">
         <h1>自定义checkbox<br>与radio样式</h1>
-        <div class="nav">
-            <p>（原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理原理）</p>
-        </div>
+        <hr class="hr-devide">
+        <p>隐藏原生的input选框
+            <br>
+            自定义新的选框
+            <br>
+            并通过CSS或JS控制切换是否选中的状态
+        </p>
     </div>
 </div>
 <script data-main="../../javascript/css_checkstyle" src="../../javascript/base/require.js"></script>
