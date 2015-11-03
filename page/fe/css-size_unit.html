@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+  <title>Evernote Export</title>
+
+  <basefont face="微软雅黑" size="2" />
+
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <meta name="exporter-version" content="Evernote Windows/276152; Windows/6.1.7601 Service Pack 1;"/>
+
+  <style>
+
+    body, td {
+
+      font-family: 微软雅黑;
+
+      font-size: 10pt;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<a name="1111"/>
+
+<h1>css尺寸单位</h1>
+
+
+
+<div>
+
+<span style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;"><div>CSS中常用的有三类：</div><div>相对单位：px、ex、em</div><div>绝对单位：<img src="Evernote.enex_files/Image.png" type="image/png" style="cursor: default; height: auto;cursor: default;cursor: default;"/></div><div>百分比：%</div><div><br/></div><div>W3C推荐：</div><div><img src="Evernote.enex_files/Image [1].png" type="image/png" style="cursor: default; height: auto;cursor: default;cursor: default;"/></div><div><hr/>
+
+px（pixel - picture element）像素
+
+<div>相对于屏幕分辨率的字体大小</div><div>整数（设备像素比devicePixelRatio &gt;= 2时可设置值为.5，否则将识别为0）</div><div><strike><b style="word-wrap: break-word; font-family: 微软雅黑, Tahoma, Helvetica, SimSun, sans-serif; widows: 1; background-color: rgb(255, 255, 255);">px</b><span style="font-family: 微软雅黑, Tahoma, Helvetica, SimSun, sans-serif; widows: 1; background-color: rgb(255, 255, 255);">是绝对单位，不支持IE的缩放。</span></strike></div><div>通过<span style="font-size: 16px;">浏览器字体大小设置</span>无效（chrome/IE/firefox）</div><div>eg：http://xueyi1230.github.io/page/others/chat.html</div><div><br/></div><div>最常用，不灵活</div><div><hr/></div><div>em（font size of the element）</div><div>相对于当前对象内文本的字体大小（高度）</div><div>可指定到小数点后三位</div><div>通过浏览器字体大小设置可改变字体大小（firefox无效）</div><div>eg：http://v1.jontangerine.com/silo/css/elastic-layout/</div><div><br/></div><div>计算方法复杂：当前元素字体大小使用相对于父元素计算；当前元素行高/尺寸相对于自身字体大小计算</div><div><br/></div><div><font color="#1ECCFF">em最初表示的是字体中大写M的<span style="font-size: 21px;">宽度</span>及所用的尺寸，ex？</font><font color="#FFFFFF">字体x的高度</font></div><div><hr/></div><div>rem（font size of the root element）</div><div>相对于</div><div>IE9+</div><div> <img src="Evernote.enex_files/Image [2].png" type="image/png" height="663" style="cursor: default; height: auto;cursor: default;cursor: default;" width="1273"/></div><div><br/></div><div><font color="#FFAF00">使用等宽字体（如&lt;pre&gt;默认font-family: monospace）时，em/rem均会产生奇怪的效果</font></div><div><font color="#FFAF00"><br/></font></div><div>使用方法：</div><div>1）62.5</div><div><img src="Evernote.enex_files/Image [3].png" type="image/png" style="cursor: default; height: auto;cursor: default;cursor: default;"/></div><div>firefox/IE正常，chrome因为不支持中文浏览器（charset=UTF-8）字体大小小于12px，因此计算不准确</div><div>2）625</div><div><img src="Evernote.enex_files/Image [4].png" type="image/png" style="cursor: default; height: auto;cursor: default;cursor: default;"/></div><div><br/></div><div>PPI/DPI（pixels per inch/device pixels per inch）</div><div>对角线像素，除以屏幕尺寸（对角线长度）</div><div>eg：iphone 6s plus </div></div><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><div><img src="Evernote.enex_files/Image [5].png" type="image/png" style="cursor: default; height: auto;cursor: default;cursor: default;"/>计算=400.528…</div><div><font color="#1ECCFF">（分辨率：显示分辨率，单位像素；像素密度：单位像素每英寸，与图片分辨率相同）</font></div><div><br/></div></blockquote><div>不同密度区间，对应不同默认缩放比</div><div><img src="Evernote.enex_files/Image [6].png" type="image/png" style="cursor: default; height: auto;cursor: default;cursor: default;"/>xxhdpi480，xxxhdpi640</div><div>viemport的target-densitydpi属性，默认值为medium-dpi（<span style="font-size: 19px;">160</span>）</div><div><img src="Evernote.enex_files/Image [7].png" type="image/png" style="cursor: default; height: auto;cursor: default;cursor: default;"/></div><div><br/></div><div>iphone4（640*960）首推retina屏幕，320成为超高密度的分界线</div><div><br/></div><div>回来看devicePixelRatio：</div><div>设备像素比devicePixelRatio，是指设备上物理像素和设备独立像素dip(device-independent pixels )的比例</div><div>其中，物理像素，就是iphone4的640*960；</div><div>          设备独立像素dip，是基于设备屏幕密度的抽象单位，换算公式为<span style="color: rgb(34, 34, 34); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 13px; widows: 1;">dip =</span> <span style="color: rgb(34, 34, 34); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; widows: 1; font-size: 19px;">1</span><span style="color: rgb(34, 34, 34); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; widows: 1; font-size: 19px;">60</span> <span style="color: rgb(34, 34, 34); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 13px; widows: 1;">* px / density （</span>px = dip * density / 160<span style="color: rgb(34, 34, 34); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 13px; widows: 1;">）</span></div><div><span style="color: rgb(34, 34, 34); font-family: &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif; font-size: 13px; widows: 1;">对于iphone4的宽度尺寸，dip = 160 * 640 / 320 = 320</span></div><div style="widows: 1;"><span style="widows: 2;">devicePixelRatio = 640 / 320 = 2</span></div><div style="widows: 1;">以此可以来区分视网膜设备还是非视网膜设备（0.5px）</div><div style="widows: 1;"><br/></div><div style="widows: 1;">当设置&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;时，iphone4的视区宽度并不是640像素，而是320像素</div><div><br/></div><div><span style="color: rgb(58, 65, 69); font-family: &apos;Avenir Next&apos;, Avenir, &apos;Helvetica Neue&apos;, Helvetica, &apos;Hiragino Sans GB&apos;, &apos;Microsoft YaHei&apos;, 微软雅黑, STHeiti, &apos;WenQuanYi Micro Hei&apos;, SimSun, sans-serif; font-size: 18px; letter-spacing: 0.12px; line-height: 31.5px; widows: 1; background-color: rgb(255, 255, 255);">rem方案被证实在不同手机上显示不一致：</span>http://f2e.souche.com/blog/yi-dong-duan-zi-gua-ying-fang-an/#clue</div><div><hr/></div><div>绝对单位</div><div>in    英寸Inches（1英寸=2.54厘米）<br/>
+
+cm  厘米Centimeters<br/>
+
+mm 毫米millimetre<br/>
+
+pt    点Points（1点=1/72英寸）<br/>
+
+pc   皮卡Picas（1皮卡=12点）</div><div><br/></div><div><br/></div><div><br/></div><div><br/></div><div><br/></div><div><br/></div><div><br/></div><div>参考资料：</div><div>维基百科</div><div>Web Style Sheets CSS tips &amp; tricks：http://www.w3.org/Style/Examples/007/units.en.html</div><div>CSS3的REM设置字体大小：http://www.w3cplus.com/css3/define-font-size-with-css3-rem</div><div>web app变革之rem：<a href="http://isux.tencent.com/web-app-rem.html">http://isux.tencent.com/web-app-rem.html</a></div><div>前端之Android入门(6):屏幕适配：http://isux.tencent.com/learn-android-from-zero-session6.html</div><div>移动终端开发必备知识：http://isux.tencent.com/mobile-development-essential-knowledge.html</div><div>移动应用界面设计的尺寸设置及规范：http://www.imooc.com/article/1163</div><div>Retina屏的移动设备如何实现真正1px的线？：http://jinlong.github.io/2015/05/24/css-retina-hairlines/</div><div>CSS Lengths and Units：http://www.corelangs.com/css/basics/units.html</div><div>em、pt、px和百分比：http://www.yanyulin.info/pages/2015/01/5180408501886.html</div><div>CSS长度单位及区别 em ex px pt in：http://www.cnblogs.com/jlsme/articles/1294620.html</div><div>设备像素比devicePixelRatio简单介绍：http://www.zhangxinxu.com/wordpress/?p=2568</div><div>px、dp、dip、dpi、sp 等到底有什么联系区别？产生的根源和设计时的影响如何？是否屏幕密度的决定原因：http://www.zhihu.com/question/19625584</div></span>
+
+</div></body></html>
