@@ -191,7 +191,7 @@ button{
 /****************************************
 移动设备
 *****************************************/
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 750px) {
 	body {
 		font-size:14px;
 	}
